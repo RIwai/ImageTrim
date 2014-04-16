@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1DAC9457-585B-4631-AC3F-CB192E8C6BDE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ImageTrim</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CBDAC449-D1E4-40C7-B272-8DC13D03E163</key>
+		<string>https://svn.hic-soft.co.jp/repository/external/nikki-ca/Product/trunk/iOS/ImageTrim</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ImageTrim/ImageTrim.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CBDAC449-D1E4-40C7-B272-8DC13D03E163</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>CBDAC449-D1E4-40C7-B272-8DC13D03E163</key>
+		<string>https://svn.hic-soft.co.jp/repository/external/nikki-ca</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://svn.hic-soft.co.jp/repository/external/nikki-ca/Product/trunk/iOS/ImageTrim/ImageTrim/ImageTrim.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CBDAC449-D1E4-40C7-B272-8DC13D03E163</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CBDAC449-D1E4-40C7-B272-8DC13D03E163</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ImageTrim</string>
+		</dict>
+	</array>
+</dict>
+</plist>
