@@ -13,9 +13,11 @@
 
 @property (nonatomic, weak) IBOutlet UIImageView *imageView;
 @property (nonatomic, weak) IBOutlet UISlider *slider;
+@property (nonatomic, weak) IBOutlet UILabel *ratioLable;
 
 @property (nonatomic, strong) UIImagePickerController *picker;
 
 - (IBAction)tapImageSelectButton:(id)sender;
+- (IBAction)changeSliderValue:(id)sender;
 
 @end

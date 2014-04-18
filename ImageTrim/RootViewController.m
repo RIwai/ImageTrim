@@ -24,7 +24,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
+    [self changeRatioLable];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,14 +33,31 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Change Lable
+
+- (void)changeRatioLable {
+    float sliderValue = self.slider.value;
+
+    unsigned int percentValue = (unsigned int)(sliderValue * 100.0f);
+    NSString *setText = [NSString stringWithFormat:@"%d%%", percentValue];
+
+    self.ratioLable.text = setText;
+}
+
+#pragma mark - Action Methods
+
 - (IBAction)tapImageSelectButton:(id)sender {
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
     imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     imagePicker.delegate = self;
 
     self.picker = imagePicker;
-    
+
     [self presentViewController:imagePicker animated:YES completion:^{}];
+}
+
+- (IBAction)changeSliderValue:(id)sender {
+    [self changeRatioLable];
 }
 
 #pragma mark - UIImagePickerControllerDelegate
@@ -54,10 +72,6 @@
     [picker presentViewController:imageTrimViewController animated:YES completion:^{
         [imageTrimViewController setupImage:selectedImage withAspectHeightRatio:self.slider.value];
     }];
-//    [self dismissViewControllerAnimated:NO completion:^{
-//        [self presentViewController:imageTrimViewController animated:YES completion:^{}];
-//        [imageTrimViewController setupImage:selectedImage withAspectHeightRatio:self.slider.value];
-//    }];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
@@ -72,13 +86,10 @@
     [self dismissViewControllerAnimated:NO completion:^{
         self.picker = nil;
     }];
-//    [self.picker dismissViewControllerAnimated:YES completion:^{
-//    }];
 }
 
 - (void)imageTrimViewControllerDidCancel:(ImageTrimViewController *)trimViewController {
     [self.picker dismissViewControllerAnimated:YES completion:^{}];
-//    [self dismissViewControllerAnimated:YES completion:^{}];
 }
 
 @end
